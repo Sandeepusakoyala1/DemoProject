@@ -1,4 +1,10 @@
 #!/bin/bash
+####################################
+#author : Sandeep
+#about : Github user info 
+#date: 08-AUG-2024
+####################################
+helper()
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -35,6 +41,12 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+    function helper{
+    expected_cmd_args = 2
+    if[$# -ne $expected_cmd_args]; then
+    echo "please make sure that excuted command should have correct arguments"
+    echo "./filename followed by repoownername reponame"
+    }
 
 # Main script
 
